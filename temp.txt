@@ -1,0 +1,8 @@
+https://github.com/JayaDeHart/basic-express-server/blob/main/src/server.js
+
+https://nooro.notion.site/Fullstack-Take-Home-Task-143742070ed0805b90f7ce22124a0aa9
+
+https://www.figma.com/design/zHgJzVHfhuN720CjjSGRXQ/Todo-App-Test-Task?node-id=1-129&t=4w6cmhFPPrXdRRBL-0
+
+https://github.com/prisma/prisma-examples/blob/latest/orm/express/prisma/schema.prisma
+
