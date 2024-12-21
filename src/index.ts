@@ -1,12 +1,18 @@
 import express, { Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
 import taskRouter from "./routes/task";
+import cors from "cors";
 
 export const prisma = new PrismaClient();
 const app = express();
 const port = 8000;
 
 async function start() {
+  app.use(
+    cors({
+      origin: "http://localhost:3000",
+    })
+  );
   app.use(express.json());
   app.use("/api/tasks", taskRouter);
 
