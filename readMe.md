@@ -8,6 +8,8 @@ A simple CRUD backend using Prisma and Express
 
 #### Setting up the database
 
+0. Clone the repository and run `npm install`
+
 1. First, make sure you have Mysql installed locally.
 
 2. Then, rename `.env.sample` to `.env`, and replace the username and password with the credentials for your postgres instance. Ensure your mysql user has the requisite permissions to create tables. You can also use the default root user if you wish.
