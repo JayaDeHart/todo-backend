@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: todo-backend
+    env_file:
+      - .env.docker
+    build:
+      context: .
+    ports:
+      - "8000:8000"
