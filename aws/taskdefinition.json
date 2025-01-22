@@ -14,12 +14,6 @@
         }
       ],
       "essential": true,
-      "environment": [
-        {
-          "name": "DATABASE_URL",
-          "value": "todo-db-1.c9a1omjyhozn.us-west-2.rds.amazonaws.com"
-        }
-      ],
       "mountPoints": [],
       "volumesFrom": [],
       "systemControls": []
