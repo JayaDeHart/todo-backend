@@ -1,0 +1,57 @@
+{
+  "taskDefinitionArn": "arn:aws:ecs:us-west-2:443933362940:task-definition/todo-task:2",
+  "containerDefinitions": [
+    {
+      "name": "todo-container",
+      "image": "443933362940.dkr.ecr.us-west-2.amazonaws.com/todo/todo-server:latest",
+      "cpu": 256,
+      "memory": 512,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "hostPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "environment": [
+        {
+          "name": "DATABASE_URL",
+          "value": "todo-db-1.c9a1omjyhozn.us-west-2.rds.amazonaws.com"
+        }
+      ],
+      "mountPoints": [],
+      "volumesFrom": [],
+      "systemControls": []
+    }
+  ],
+  "family": "todo-task",
+  "executionRoleArn": "arn:aws:iam::443933362940:role/ECSTaskRunner",
+  "networkMode": "awsvpc",
+  "revision": 2,
+  "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+    {
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "name": "ecs.capability.execution-role-ecr-pull"
+    },
+    {
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+    },
+    {
+      "name": "ecs.capability.task-eni"
+    }
+  ],
+  "placementConstraints": [],
+  "compatibilities": ["EC2", "FARGATE"],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "registeredAt": "2025-01-22T21:47:29.063Z",
+  "registeredBy": "arn:aws:iam::443933362940:user/Jaya_Admin",
+  "enableFaultInjection": false,
+  "tags": []
+}
