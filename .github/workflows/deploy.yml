@@ -10,7 +10,7 @@ env:
   # set this to your Amazon ECS service name
   ECS_CLUSTER: todo-app-cluster # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION:
-    "../taskdefinition.json" # set this to the path to your Amazon ECS task definition
+    "./taskdefinition.json" # set this to the path to your Amazon ECS task definition
     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: todo-container
 
