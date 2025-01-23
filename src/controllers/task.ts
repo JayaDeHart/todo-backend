@@ -11,6 +11,7 @@ const getTasks = async (req: Request, res: Response) => {
     const tasks = await prisma.task.findMany();
     res.status(200).json(tasks);
   } catch (e) {
+    console.log(e);
     res.status(500).json({ error: e });
   }
 };
@@ -71,6 +72,7 @@ const deleteTask = async (req: Request, res: Response) => {
     });
     res.status(200).json(deletedTask);
   } catch (e) {
+    console.log(e);
     res.status(500).json({ error: e });
   }
 };
