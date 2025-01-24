@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "running database migrations"
-npx prisma migrate deploy
+npx prisma db push
 
 echo "starting the server"
 npm run start
