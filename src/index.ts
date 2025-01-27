@@ -10,7 +10,7 @@ const port = 8000;
 async function start() {
   app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: ["http://localhost:3000", "https://jayadehart.com"],
     })
   );
   app.use(express.json());
