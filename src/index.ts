@@ -8,11 +8,7 @@ const app = express();
 const port = 8000;
 
 async function start() {
-  app.use(
-    cors({
-      origin: ["http://localhost:3000", "https://jayadehart.com"],
-    })
-  );
+  app.use(cors());
   app.use(express.json());
   app.use("/api/tasks", taskRouter);
 
