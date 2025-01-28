@@ -2,7 +2,7 @@
 
 ## About
 
-A simple CRUD backend using Prisma and Express
+A simple CRUD backend for a [Todo App](https://github.com/JayaDeHart/todo-frontend) using Prisma and Express. Dockerized, and uses Github actions + AWS ECR / ECS for deployment.
 
 ## Getting Started
 
